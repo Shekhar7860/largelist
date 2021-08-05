@@ -242,6 +242,7 @@ export class LargeList extends React.PureComponent<LargeListPropType> {
           groupIndexes.map((indexes, index) => {
             return (
               <Group
+              extraData = {this.props}
                 {...this.props}
                 index={index}
                 key={index}

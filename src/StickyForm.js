@@ -31,9 +31,11 @@ export class StickyForm extends React.PureComponent<StickyFormPropType> {
   }
   
   render() {
+    console.log('t', this.props)
     return (
       <LargeList
         {...this.props}
+        extraData={this.props}
         ref={this._largeList}
         renderHeader={this._renderHeader}
         renderSection={this._renderSection}
